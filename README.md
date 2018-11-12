@@ -1,7 +1,7 @@
-# instrumentDatabaseV1.0
+# READ ME
 
-READ ME
 Instrument Library Filer v 1.0
+
 Code by Matthew Raymond
 
 Reason for Writing the Code:
