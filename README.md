@@ -4,21 +4,10 @@ Instrument Library Filer v 1.0
 
 Code by Matthew Raymond
 
-Reason for Writing the Code:
-
-I began working on this code because I was working in the instrument checkout room at my school and
-I was getting frustrated at the fact that we were just using a basic .xcel file for all of our
-record-keeping. There were constant formatting issue and no way to keep things clean and
-self-contained, and there was a lot of repetitive typing.
+Overview:
 
 This program was written as an attempt to cut down on as much typing as possible and to make
 everything very clean, fast, straightforward, and accessible.
-
-I haven't done it yet, but I plan on presenting this program to my boss when it's mostly finished
-and asking him if we can use this instead of just an excel file, beacuse I think that it would be
-much more convenient in the end.
-
-tldr; I wanted to improve my workplace.
 
 
 Instructions:
