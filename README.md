@@ -61,6 +61,8 @@ information, click "Export .csv File", which will export a file to your data dir
 To add employees or change the current working employee, simply click those buttons on the top
 right.
 
+To open the most recent backup, click "Import Backup".
+
 
 
 General Notes:
@@ -80,10 +82,23 @@ Additionally, the email domains are hard-coded in and are specific to my school,
 basic programming skills someone would be able to alter them to work wit whatever email domains.
 
 
+Changelog:
+
+v 1.1
+
+- Bug Correction
+  - Corrected null entry bugs
+  - Corrected user entry bugs
+  - Streamlined window movement
+
+- New Features
+  - Ensure that id number is as long as it should be (first entry and log edit)
+  - Automatic backup every other week (must be opened every other week for this to work)
+    - Import last backup in case of catastrophic failure
+
+
 Future Plans:
-- Record time of checkout
-- Prevention of accidental duplications in student database (i.e. multiple ID#’s being assigned the
-  same name)
+
 - Edit saved student data
 - Edit saved instrument data
 - Revamp instrument sorting (instead of a different list for every section)
@@ -104,10 +119,15 @@ Future Plans:
 - Support for more card reader types
 - Potentially enabling it to access the school’s database of ID numbers so that you don’t ever
   need to type in student information
-- Monthly backup system
-  - Ability to import old .xml files to look at old data
 - Display a list of students and see what they have checkout out to their name
-- Programmatic colors on filters to know what's pushed and what is't
+- Record time of checkout
+- Prevention of accidental duplications in student database (i.e. multiple ID#’s being assigned
+    the same name)
+- Add autofill N/A for bow
+- On Check In/Out Log Employee Column edit, open up employee window to ensure that correct
+  employee is chosen
+- Programmatic colors on filters to know what's pushed and what isn't
+- Choose which backup to open
 
 
 Resources Used:
