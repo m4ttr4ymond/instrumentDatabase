@@ -78,6 +78,8 @@ works is the field marked “Student ID” in the check out/in winform. This cod
 modified to work with other card readers, but I would need to do some research in order to support
 others. It doesn’t really matter though, as you can type in the information by hand anyway.
 
+Additionally, this program has built in support for TaoTronics USB Barcode Scanner 0878130. Click on the search button on the main winform and scan a barcode in order to search the library for that instrument.
+
 Additionally, the email domains are hard-coded in and are specific to my school, but with some very
 basic programming skills someone would be able to alter them to work wit whatever email domains.
 
@@ -95,6 +97,7 @@ v 1.1
   - Ensure that id number is as long as it should be (first entry and log edit)
   - Automatic backup every other week (must be opened every other week for this to work)
     - Import last backup in case of catastrophic failure
+  - Barcode scanner support
 
 
 Future Plans:
