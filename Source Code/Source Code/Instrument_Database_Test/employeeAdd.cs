@@ -123,7 +123,7 @@ namespace Instrument_Database_Test
         private void employeeAdd_FormClosed(object sender, FormClosedEventArgs e)
         {
             Form1.currentStaff = original;
-            SaveToFile.saveEmployeeNames();
+            SaveToFile.serializeAll();
 
             if (action == 1 && Form1.currentStaff.Count > 0)
                 {

@@ -76,7 +76,7 @@
             this.checkoutGrid.ReadOnly = true;
             this.checkoutGrid.RowTemplate.Height = 33;
             this.checkoutGrid.Size = new System.Drawing.Size(908, 410);
-            this.checkoutGrid.TabIndex = 1;
+            this.checkoutGrid.TabIndex = 0;
             this.checkoutGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.checkoutGrid_CellContentClick);
             this.checkoutGrid.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.content_DoubleClick);
             this.checkoutGrid.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.checkoutGrid_CellEndEdit);

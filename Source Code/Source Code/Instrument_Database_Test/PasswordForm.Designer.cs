@@ -50,7 +50,7 @@
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.PasswordChar = '*';
             this.passwordBox.Size = new System.Drawing.Size(408, 31);
-            this.passwordBox.TabIndex = 1;
+            this.passwordBox.TabIndex = 0;
             this.passwordBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PasswordForm_KeyPress);
             // 
             // enterButton
@@ -58,7 +58,7 @@
             this.enterButton.Location = new System.Drawing.Point(114, 137);
             this.enterButton.Name = "enterButton";
             this.enterButton.Size = new System.Drawing.Size(105, 47);
-            this.enterButton.TabIndex = 2;
+            this.enterButton.TabIndex = 1;
             this.enterButton.Text = "Enter";
             this.enterButton.UseVisualStyleBackColor = true;
             this.enterButton.Click += new System.EventHandler(this.enterButton_Click);
@@ -68,7 +68,7 @@
             this.cancelButton.Location = new System.Drawing.Point(225, 136);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(105, 47);
-            this.cancelButton.TabIndex = 3;
+            this.cancelButton.TabIndex = 2;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);

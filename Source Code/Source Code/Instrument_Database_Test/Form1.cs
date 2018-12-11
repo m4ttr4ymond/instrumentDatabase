@@ -21,7 +21,7 @@ namespace Instrument_Database_Test
         public static BindingList<Employees> currentStaff = new BindingList<Employees>();
         public static Employees currentEmployee;
 
-        public static string versionNumber = "1.1.2";
+        public static string versionNumber = "v1.2";
 
         // Students
         public static BindingList<StudentData> students = new BindingList<StudentData>();
@@ -52,8 +52,7 @@ namespace Instrument_Database_Test
         {
             InitializeComponent();
 
-            // ToDo: TURN THIS ON BEFORE TURNING IN
-            //new SplashScreen();
+            new SplashScreen();
 
             instrumentList.DataSource = allInstruments;
             newDataDisplay.Text = "";
@@ -315,8 +314,6 @@ namespace Instrument_Database_Test
             // Array that holds a boolean for each item in the search criteia
             bool[] searchLength = new bool[searchCriteria.Length];
 
-            // ToDo: Probably could simply away the array
-
             // Searches to make see if each item has everything that's in the search crite
             for (int i = 0; i < searchCriteria.Length; i++)
             {
@@ -553,6 +550,7 @@ namespace Instrument_Database_Test
             }
             // Display what employee is logged in
             this.Text = currentEmployee + ": ILF v" + versionNumber;
+
             Refresh();
         }
 
@@ -613,6 +611,8 @@ namespace Instrument_Database_Test
         {
             if (Form1.currentStaff.Count == 0)
                 File.Delete(filepath + "\\Employees.xml");
+
+            SaveToFile.serializeAll();
 
             // Perform backup if necessary
             backupFunction.performBackup(filepath);

@@ -109,7 +109,7 @@
             this.bowBox.Location = new System.Drawing.Point(56, 407);
             this.bowBox.Name = "bowBox";
             this.bowBox.Size = new System.Drawing.Size(170, 31);
-            this.bowBox.TabIndex = 4;
+            this.bowBox.TabIndex = 3;
             this.bowBox.Leave += new System.EventHandler(this.bowBox_Leave);
             // 
             // bowLabel
@@ -126,7 +126,7 @@
             this.brandBox.Location = new System.Drawing.Point(290, 82);
             this.brandBox.Name = "brandBox";
             this.brandBox.Size = new System.Drawing.Size(170, 31);
-            this.brandBox.TabIndex = 5;
+            this.brandBox.TabIndex = 4;
             // 
             // brandLabel
             // 
@@ -142,7 +142,7 @@
             this.modelBox.Location = new System.Drawing.Point(290, 189);
             this.modelBox.Name = "modelBox";
             this.modelBox.Size = new System.Drawing.Size(170, 31);
-            this.modelBox.TabIndex = 6;
+            this.modelBox.TabIndex = 5;
             // 
             // modelLabel
             // 
@@ -158,7 +158,7 @@
             this.vendorBox.Location = new System.Drawing.Point(290, 301);
             this.vendorBox.Name = "vendorBox";
             this.vendorBox.Size = new System.Drawing.Size(170, 31);
-            this.vendorBox.TabIndex = 7;
+            this.vendorBox.TabIndex = 6;
             // 
             // vendorLabel
             // 
@@ -174,7 +174,7 @@
             this.serialNumBox.Location = new System.Drawing.Point(290, 407);
             this.serialNumBox.Name = "serialNumBox";
             this.serialNumBox.Size = new System.Drawing.Size(170, 31);
-            this.serialNumBox.TabIndex = 8;
+            this.serialNumBox.TabIndex = 7;
             // 
             // serialNumLabel
             // 
@@ -190,7 +190,7 @@
             this.valueBox.Location = new System.Drawing.Point(512, 82);
             this.valueBox.Name = "valueBox";
             this.valueBox.Size = new System.Drawing.Size(170, 31);
-            this.valueBox.TabIndex = 9;
+            this.valueBox.TabIndex = 8;
             // 
             // valueLabel
             // 
@@ -206,7 +206,7 @@
             this.noteBox.Location = new System.Drawing.Point(512, 189);
             this.noteBox.Name = "noteBox";
             this.noteBox.Size = new System.Drawing.Size(170, 31);
-            this.noteBox.TabIndex = 10;
+            this.noteBox.TabIndex = 9;
             // 
             // noteLabel
             // 
@@ -233,7 +233,7 @@
             this.catagoryBox.Location = new System.Drawing.Point(512, 301);
             this.catagoryBox.Name = "catagoryBox";
             this.catagoryBox.Size = new System.Drawing.Size(170, 179);
-            this.catagoryBox.TabIndex = 11;
+            this.catagoryBox.TabIndex = 10;
             this.catagoryBox.SelectedIndexChanged += new System.EventHandler(this.catagoryBox_SelectedIndexChanged);
             // 
             // saveNewButton
@@ -241,7 +241,7 @@
             this.saveNewButton.Location = new System.Drawing.Point(474, 496);
             this.saveNewButton.Name = "saveNewButton";
             this.saveNewButton.Size = new System.Drawing.Size(122, 42);
-            this.saveNewButton.TabIndex = 12;
+            this.saveNewButton.TabIndex = 11;
             this.saveNewButton.Text = "Save";
             this.saveNewButton.UseVisualStyleBackColor = true;
             this.saveNewButton.Click += new System.EventHandler(this.saveNewButton_Click);
@@ -251,7 +251,7 @@
             this.cancelButton.Location = new System.Drawing.Point(602, 496);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(122, 42);
-            this.cancelButton.TabIndex = 13;
+            this.cancelButton.TabIndex = 12;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);

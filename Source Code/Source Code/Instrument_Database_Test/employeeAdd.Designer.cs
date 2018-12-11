@@ -47,7 +47,7 @@
             this.employeeBox.Location = new System.Drawing.Point(17, 118);
             this.employeeBox.Name = "employeeBox";
             this.employeeBox.Size = new System.Drawing.Size(246, 129);
-            this.employeeBox.TabIndex = 0;
+            this.employeeBox.TabIndex = 4;
             // 
             // nameLabel
             // 
@@ -63,7 +63,7 @@
             this.nameBox.Location = new System.Drawing.Point(17, 38);
             this.nameBox.Name = "nameBox";
             this.nameBox.Size = new System.Drawing.Size(246, 31);
-            this.nameBox.TabIndex = 2;
+            this.nameBox.TabIndex = 0;
             this.nameBox.Click += new System.EventHandler(this.nameBox_Click);
             this.nameBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nameBox_KeyPress);
             // 
@@ -82,7 +82,7 @@
             this.deleteButton.Location = new System.Drawing.Point(269, 93);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(105, 49);
-            this.deleteButton.TabIndex = 4;
+            this.deleteButton.TabIndex = 5;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
@@ -92,7 +92,7 @@
             this.cancelButton.Location = new System.Drawing.Point(269, 203);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(105, 49);
-            this.cancelButton.TabIndex = 5;
+            this.cancelButton.TabIndex = 7;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
@@ -113,7 +113,7 @@
             this.adminButton.Location = new System.Drawing.Point(17, 76);
             this.adminButton.Name = "adminButton";
             this.adminButton.Size = new System.Drawing.Size(103, 29);
-            this.adminButton.TabIndex = 7;
+            this.adminButton.TabIndex = 1;
             this.adminButton.TabStop = true;
             this.adminButton.Text = "Admin";
             this.adminButton.UseVisualStyleBackColor = true;
@@ -124,7 +124,7 @@
             this.standardButton.Location = new System.Drawing.Point(126, 76);
             this.standardButton.Name = "standardButton";
             this.standardButton.Size = new System.Drawing.Size(130, 29);
-            this.standardButton.TabIndex = 8;
+            this.standardButton.TabIndex = 2;
             this.standardButton.TabStop = true;
             this.standardButton.Text = "Standard";
             this.standardButton.UseVisualStyleBackColor = true;

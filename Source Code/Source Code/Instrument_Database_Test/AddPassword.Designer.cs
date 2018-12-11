@@ -56,7 +56,7 @@
             this.passwordBox.Location = new System.Drawing.Point(18, 42);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.Size = new System.Drawing.Size(363, 31);
-            this.passwordBox.TabIndex = 2;
+            this.passwordBox.TabIndex = 0;
             this.passwordBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.passwordBox_KeyPress);
             // 
             // enterButton
@@ -64,7 +64,7 @@
             this.enterButton.Location = new System.Drawing.Point(148, 91);
             this.enterButton.Name = "enterButton";
             this.enterButton.Size = new System.Drawing.Size(99, 43);
-            this.enterButton.TabIndex = 3;
+            this.enterButton.TabIndex = 1;
             this.enterButton.Text = "Enter";
             this.enterButton.UseVisualStyleBackColor = true;
             this.enterButton.Click += new System.EventHandler(this.enterButton_Click);

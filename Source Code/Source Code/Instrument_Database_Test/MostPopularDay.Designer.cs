@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.dayChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dayLabel = new System.Windows.Forms.Label();
             this.rankingLabel = new System.Windows.Forms.Label();
@@ -39,10 +39,10 @@
             // 
             // dayChart
             // 
-            chartArea5.Name = "ChartArea1";
-            this.dayChart.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.dayChart.Legends.Add(legend5);
+            chartArea1.Name = "ChartArea1";
+            this.dayChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.dayChart.Legends.Add(legend1);
             this.dayChart.Location = new System.Drawing.Point(-1, -1);
             this.dayChart.Name = "dayChart";
             this.dayChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
@@ -77,7 +77,7 @@
             this.cancelButton.Location = new System.Drawing.Point(930, 698);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(126, 50);
-            this.cancelButton.TabIndex = 3;
+            this.cancelButton.TabIndex = 0;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);

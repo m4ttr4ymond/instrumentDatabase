@@ -154,7 +154,7 @@
             this.dataLabel.Location = new System.Drawing.Point(517, 83);
             this.dataLabel.Name = "dataLabel";
             this.dataLabel.Size = new System.Drawing.Size(101, 25);
-            this.dataLabel.TabIndex = 2;
+            this.dataLabel.TabIndex = 25;
             this.dataLabel.Text = "Overview";
             // 
             // addButton
@@ -162,7 +162,7 @@
             this.addButton.Location = new System.Drawing.Point(204, 580);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(181, 63);
-            this.addButton.TabIndex = 15;
+            this.addButton.TabIndex = 14;
             this.addButton.Text = "Add Item";
             this.addButton.UseVisualStyleBackColor = true;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
@@ -174,7 +174,7 @@
             this.saveButton.Location = new System.Drawing.Point(681, 649);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(181, 63);
-            this.saveButton.TabIndex = 19;
+            this.saveButton.TabIndex = 17;
             this.saveButton.Text = "Save Changes";
             this.saveButton.UseVisualStyleBackColor = false;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
@@ -205,7 +205,7 @@
             this.deleteButton.Location = new System.Drawing.Point(204, 649);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(181, 63);
-            this.deleteButton.TabIndex = 16;
+            this.deleteButton.TabIndex = 15;
             this.deleteButton.Text = "Delete Item";
             this.deleteButton.UseVisualStyleBackColor = true;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
@@ -252,7 +252,7 @@
             this.checkoutButton.Location = new System.Drawing.Point(17, 580);
             this.checkoutButton.Name = "checkoutButton";
             this.checkoutButton.Size = new System.Drawing.Size(181, 63);
-            this.checkoutButton.TabIndex = 13;
+            this.checkoutButton.TabIndex = 12;
             this.checkoutButton.Text = "Check Out";
             this.checkoutButton.UseVisualStyleBackColor = true;
             this.checkoutButton.Click += new System.EventHandler(this.checkoutButton_Click);
@@ -262,7 +262,7 @@
             this.checkInButton.Location = new System.Drawing.Point(17, 649);
             this.checkInButton.Name = "checkInButton";
             this.checkInButton.Size = new System.Drawing.Size(181, 63);
-            this.checkInButton.TabIndex = 14;
+            this.checkInButton.TabIndex = 13;
             this.checkInButton.Text = "Check In";
             this.checkInButton.UseVisualStyleBackColor = true;
             this.checkInButton.Click += new System.EventHandler(this.checkInButton_Click);
@@ -282,7 +282,7 @@
             this.missingButton.Location = new System.Drawing.Point(391, 649);
             this.missingButton.Name = "missingButton";
             this.missingButton.Size = new System.Drawing.Size(181, 63);
-            this.missingButton.TabIndex = 17;
+            this.missingButton.TabIndex = 16;
             this.missingButton.Text = "Missing Status";
             this.missingButton.UseVisualStyleBackColor = true;
             this.missingButton.Click += new System.EventHandler(this.missingButton_Click);
@@ -292,7 +292,7 @@
             this.csvExportButton.Location = new System.Drawing.Point(784, 85);
             this.csvExportButton.Name = "csvExportButton";
             this.csvExportButton.Size = new System.Drawing.Size(218, 45);
-            this.csvExportButton.TabIndex = 20;
+            this.csvExportButton.TabIndex = 19;
             this.csvExportButton.Text = "Export .csv File";
             this.csvExportButton.UseVisualStyleBackColor = true;
             this.csvExportButton.Click += new System.EventHandler(this.csvExportButton_Click);
@@ -302,7 +302,7 @@
             this.addEmployeesButton.Location = new System.Drawing.Point(784, 136);
             this.addEmployeesButton.Name = "addEmployeesButton";
             this.addEmployeesButton.Size = new System.Drawing.Size(218, 45);
-            this.addEmployeesButton.TabIndex = 22;
+            this.addEmployeesButton.TabIndex = 20;
             this.addEmployeesButton.Text = "Add Employees";
             this.addEmployeesButton.UseVisualStyleBackColor = true;
             this.addEmployeesButton.Click += new System.EventHandler(this.addEmployeesButton_Click);
@@ -312,7 +312,7 @@
             this.changeEmployeeButton.Location = new System.Drawing.Point(784, 187);
             this.changeEmployeeButton.Name = "changeEmployeeButton";
             this.changeEmployeeButton.Size = new System.Drawing.Size(218, 45);
-            this.changeEmployeeButton.TabIndex = 23;
+            this.changeEmployeeButton.TabIndex = 21;
             this.changeEmployeeButton.Text = "Change Employee";
             this.changeEmployeeButton.UseVisualStyleBackColor = true;
             this.changeEmployeeButton.Click += new System.EventHandler(this.changeEmployeeButton_Click);
@@ -322,7 +322,7 @@
             this.importButton.Location = new System.Drawing.Point(784, 289);
             this.importButton.Name = "importButton";
             this.importButton.Size = new System.Drawing.Size(218, 45);
-            this.importButton.TabIndex = 24;
+            this.importButton.TabIndex = 23;
             this.importButton.Text = "Import Backup";
             this.importButton.UseVisualStyleBackColor = true;
             this.importButton.Click += new System.EventHandler(this.importButton_Click);
@@ -332,7 +332,7 @@
             this.backupButton.Location = new System.Drawing.Point(784, 238);
             this.backupButton.Name = "backupButton";
             this.backupButton.Size = new System.Drawing.Size(218, 45);
-            this.backupButton.TabIndex = 25;
+            this.backupButton.TabIndex = 22;
             this.backupButton.Text = "Create Backup";
             this.backupButton.UseVisualStyleBackColor = true;
             this.backupButton.Click += new System.EventHandler(this.backupButton_Click);
@@ -342,7 +342,7 @@
             this.dataButton.Location = new System.Drawing.Point(784, 340);
             this.dataButton.Name = "dataButton";
             this.dataButton.Size = new System.Drawing.Size(218, 45);
-            this.dataButton.TabIndex = 26;
+            this.dataButton.TabIndex = 24;
             this.dataButton.Text = "Checkout Data";
             this.dataButton.UseVisualStyleBackColor = true;
             this.dataButton.Click += new System.EventHandler(this.dataButton_Click);
@@ -352,7 +352,7 @@
             this.checkoutsPerStudent.Location = new System.Drawing.Point(784, 391);
             this.checkoutsPerStudent.Name = "checkoutsPerStudent";
             this.checkoutsPerStudent.Size = new System.Drawing.Size(218, 45);
-            this.checkoutsPerStudent.TabIndex = 27;
+            this.checkoutsPerStudent.TabIndex = 25;
             this.checkoutsPerStudent.Text = "Student Data";
             this.checkoutsPerStudent.UseVisualStyleBackColor = true;
             this.checkoutsPerStudent.Click += new System.EventHandler(this.checkoutsPerStudent_Click);

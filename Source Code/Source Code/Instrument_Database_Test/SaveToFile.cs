@@ -29,8 +29,6 @@ namespace Instrument_Database_Test
             foreach (BindingList<Instrument> list in Form1.libraryRecords)
                 list.Clear();
 
-            
-
             // If the backup is going to happen
             if (backupStatus)
             {
@@ -57,53 +55,48 @@ namespace Instrument_Database_Test
 
         public static void serializeAll()
         {
-           // if (Form1.allInstruments.Count > 0)
+            try
             {
                 // New XmlSerializer object
                 XmlSerializer saver1 = new XmlSerializer(typeof(BindingList<Instrument>));
-                // New TextWriter Object
-                TextWriter writer1 = new StreamWriter(Form1.filepath + "\\InstrumentData.xml");
                 // Write to file
-                saver1.Serialize(writer1, Form1.allInstruments);
-                writer1.Close();
-                //encryptFile(Form1.filepath + "\\InstrumentData.xml");
+                using (StringWriter textWriter = new StringWriter())
+                {
+                    saver1.Serialize(textWriter, Form1.allInstruments);
+                    encryptFile(Form1.filepath + "\\InstrumentData.xml", textWriter.ToString());
+                }
             }
+            catch (Exception) { }
 
-           // if (Form1.students.Count > 0)
+            try
             {
+                // New XmlSerializer object
                 XmlSerializer saver2 = new XmlSerializer(typeof(BindingList<StudentData>));
-                // New TextWriter Object
-                TextWriter writer2 = new StreamWriter(Form1.filepath + "\\StudentData.xml");
                 // Write to file
-                saver2.Serialize(writer2, Form1.students);
-                writer2.Close();
-                //encryptFile(Form1.filepath + "\\StudentData.xml");
+                using (StringWriter textWriter = new StringWriter())
+                {
+                    saver2.Serialize(textWriter, Form1.students);
+                    encryptFile(Form1.filepath + "\\StudentData.xml", textWriter.ToString());
+                }
             }
+            catch (Exception) { }
 
-           // if (Form1.students.Count > 0)
-                saveEmployeeNames();
+            try
+            {
+                XmlSerializer saver3 = new XmlSerializer(typeof(BindingList<Employees>));
+                using (StringWriter textWriter = new StringWriter())
+                {
+                    saver3.Serialize(textWriter, Form1.currentStaff);
+                    Console.WriteLine(textWriter.ToString());
+                    encryptFile(Form1.filepath + "\\Employees.xml", textWriter.ToString());
+                }
+            }
+            catch (Exception) { }
 
             SystemSounds.Beep.Play();
         }
 
-        public static void saveEmployeeNames()
-        {
-
-            //try
-            {
-                XmlSerializer saver3 = new XmlSerializer(typeof(BindingList<Employees>));
-                // New TextWriter Object
-                using (StreamWriter writer3 = new StreamWriter(Form1.filepath + "\\Employees.xml"))
-                {
-                    // Write to string
-                    saver3.Serialize(writer3, Form1.currentStaff);
-                }
-                //encryptFile(Form1.filepath + "\\Employees.xml");
-            }
-            //catch (Exception)
-            { /* ToDo: Figure out what to do here when something is already using the file */}
-        }
-
+        // Serializes employees
         public static string serializeEmployees()
         {
             XmlSerializer saver3 = new XmlSerializer(typeof(BindingList<Employees>));
@@ -112,20 +105,18 @@ namespace Instrument_Database_Test
             {
                 // Write to string
                 saver3.Serialize(writer3, Form1.currentStaff);
+                Console.WriteLine(saver3);
+                Console.WriteLine(saver3.ToString());
                 return saver3.ToString();
             }
         }
 
         public static void deserializeEmployees()
         {
-            decryptFile(Form1.filepath + "\\Employees.xml");
-
             XmlSerializer loader = new XmlSerializer(typeof(BindingList<Employees>));
 
-            using (StringReader reader = new StringReader(Form1.filepath + "\\Employees.xml"))
-            {
+            using (MemoryStream reader = new MemoryStream(Encoding.Unicode.GetBytes(decryptFile(Form1.filepath + "\\Employees.xml"))))
                 Form1.currentStaff = (BindingList<Employees>)loader.Deserialize(reader);
-            }
         }
 
         // Reads from file
@@ -135,63 +126,34 @@ namespace Instrument_Database_Test
             {
                 // Serializes Instrument data
                 case 0:
-                    // Uses try in case there's nothing written to the file
-                    try
-                    {
-                        decryptFile(Form1.filepath + "\\InstrumentData.xml");
-                    }
-                    catch (Exception){}
                     try
                     {
                         // New deserializer
                         XmlSerializer loader = new XmlSerializer(typeof(BindingList<Instrument>));
-                        // Using statement so that it automatically closes the file
-                        using (TextReader reader = new StreamReader(Form1.filepath + "\\InstrumentData.xml"))
+                        using (MemoryStream reader = new MemoryStream(Encoding.Unicode.GetBytes(decryptFile(Form1.filepath + "\\InstrumentData.xml"))))
                             Form1.allInstruments = (BindingList<Instrument>)loader.Deserialize(reader);
-                        encryptFile(Form1.filepath + "\\InstrumentData.xml");
                     }
-                    catch (System.InvalidOperationException) { }
+                    catch (Exception) { }
                     break;
                 // Serializes Student Data
                 case 1:
                     try
                     {
-                        decryptFile(Form1.filepath + "\\StudentData.xml");
-                    }
-                    catch (Exception){}
-                    try
-                    {
-                        // New deserializer
                         XmlSerializer loader = new XmlSerializer(typeof(BindingList<StudentData>));
-                        // Using statement so that it automatically closes the file
-                        using (TextReader reader = new StreamReader(Form1.filepath + "\\StudentData.xml"))
-                        {
+                        using (MemoryStream reader = new MemoryStream(Encoding.Unicode.GetBytes(decryptFile(Form1.filepath + "\\InstrumentData.xml"))))
                             Form1.students = (BindingList<StudentData>)loader.Deserialize(reader);
-                        }
-                        encryptFile(Form1.filepath + "\\StudentData.xml");
                     }
-                    catch (System.InvalidOperationException) { }
+                    catch (Exception) { }
                     break;
                 // Serializes employee list
                 case 2:
-                    try
                     {
-                        decryptFile(Form1.filepath + "\\Employees.xml");
-                    }
-                    catch (Exception){}
-                    try
-                    {
-                        
-                        // New deserializer
                         XmlSerializer loader = new XmlSerializer(typeof(BindingList<Employees>));
-                        // Using statement so that it automatically closes the file
-                        using (TextReader reader = new StreamReader(Form1.filepath + "\\Employees.xml"))
+                        using (MemoryStream reader = new MemoryStream(Encoding.Unicode.GetBytes(decryptFile(Form1.filepath + "\\Employees.xml"))))
                         {
                             Form1.currentStaff = (BindingList<Employees>)loader.Deserialize(reader);
                         }
-                        encryptFile(Form1.filepath + "\\Employees.xml");
                     }
-                    catch (System.InvalidOperationException) { }
                     break;
             }
         }
@@ -221,29 +183,21 @@ namespace Instrument_Database_Test
         }
 
         // Encrypt the file
-        public static void encryptFile(string filepath)
+        public static void encryptFile(string filepath, string unsecuredData)
         {
             // Holder variabels
-            string unsecuredData = "";
             string securedData = "";
 
             // Read file
-            string[] uD = File.ReadAllLines(filepath);
-
-            if (uD.Length > 0)
+            try
             {
-                // Append
-                foreach (var item in uD)
-                    unsecuredData += item + "\n";
-
-                unsecuredData = unsecuredData.Remove(unsecuredData.LastIndexOf("\n"));
-
                 // Encrypt
                 securedData = Encrypt(unsecuredData);
 
                 // Save to file
                 File.WriteAllText(filepath, securedData);
             }
+            catch (Exception){}
         }
 
         // Decrypt a string
@@ -267,16 +221,15 @@ namespace Instrument_Database_Test
         }
 
         // Decrypt a file
-        public static void decryptFile(string filepath)
+        public static string decryptFile(string filepath)
         {
             string unsecuredData = "";
 
             string[] sD = File.ReadAllLines(filepath);
 
             unsecuredData = Decrypt(sD[0]);
-            
-            File.WriteAllText(filepath, unsecuredData);
-        }
 
+            return unsecuredData;
+        }
     }
 }

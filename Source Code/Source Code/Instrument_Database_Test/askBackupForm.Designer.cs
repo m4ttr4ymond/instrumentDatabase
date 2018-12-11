@@ -51,7 +51,7 @@
             this.continueButton.Location = new System.Drawing.Point(126, 108);
             this.continueButton.Name = "continueButton";
             this.continueButton.Size = new System.Drawing.Size(147, 49);
-            this.continueButton.TabIndex = 1;
+            this.continueButton.TabIndex = 0;
             this.continueButton.Text = "Continue";
             this.continueButton.UseVisualStyleBackColor = true;
             this.continueButton.Click += new System.EventHandler(this.continueButton_Click);
@@ -61,7 +61,7 @@
             this.cancelButton.Location = new System.Drawing.Point(279, 108);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(147, 49);
-            this.cancelButton.TabIndex = 2;
+            this.cancelButton.TabIndex = 1;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.checkoutChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.studentListLabel = new System.Windows.Forms.Label();
             this.studentList = new System.Windows.Forms.ListBox();
@@ -38,10 +38,10 @@
             // 
             // checkoutChart
             // 
-            chartArea2.Name = "ChartArea1";
-            this.checkoutChart.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.checkoutChart.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.checkoutChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.checkoutChart.Legends.Add(legend1);
             this.checkoutChart.Location = new System.Drawing.Point(13, 13);
             this.checkoutChart.Name = "checkoutChart";
             this.checkoutChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
@@ -65,7 +65,7 @@
             this.studentList.Location = new System.Drawing.Point(678, 245);
             this.studentList.Name = "studentList";
             this.studentList.Size = new System.Drawing.Size(202, 404);
-            this.studentList.TabIndex = 1;
+            this.studentList.TabIndex = 0;
             this.studentList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.studentList_MouseDoubleClick);
             // 
             // CheckoutsPerStudent
