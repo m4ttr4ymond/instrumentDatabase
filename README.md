@@ -10,7 +10,7 @@ This program was written as an attempt to cut down on as much typing as possible
 and to make everything very clean, fast, straightforward, and accessible.
 
 
-Instructions:
+# Instructions:
 
 Right click on the .exe and create a shortcut on the desktop. This will be much
 easier than just using the .exe because you won't have random files on your
@@ -91,10 +91,7 @@ To see information about individual students, select "Student Data". Double-
 clicking a student pulls up a window that lists their transaction history.
 
 
-
-
-
-General Notes:
+# General Notes:
 
 This program was built to run with an IdTech IDMB-334112B MiniMag II Magstrip
 Reader. When our student ID cards are swiped, the swipe returns numbers in the
@@ -114,11 +111,11 @@ but with some very basic programming skills someone would be able to alter them
 to work wit whatever email domains.
 
 
-Changelog:
+# Changelog:
 
-v 1.2
+## v 1.2
 
-- Bug Fixes
+###### - Bug Fixes
   - Fixed crash when opening check in/out log and list is empty
   - Fixed a bug that caused .csv files to print checkout dates in reverse order
   - Fixed the bug that let you delete your own account
@@ -127,7 +124,7 @@ v 1.2
   - Fixed the bug that allowed people to check out an instrument that's out or
     return one that not
 
-- New Features
+###### - New Features
   - Some regular expressions: and (+), or (,)
   - Live search update(search will return strings that have the search criteria
     as a substring)
@@ -151,14 +148,14 @@ v 1.2
   - Broke up the checkout note into multiple lines if it's too long for one line
 
 
-v 1.1
+## v 1.1
 
-- Bug Fixes
+###### - Bug Fixes
   - Corrected null entry bugs
   - Corrected user entry bugs
   - Streamlined window movement
 
-- New Features
+###### - New Features
   - Ensure that id number is as long as it should be (first entry and log edit)
   - Automatic backup every other week (must be opened every other week for this
     to work)
@@ -166,45 +163,28 @@ v 1.1
   - Barcode scanner support
 
 
-Future Plans:
-
-- Edit saved student data
+# Future Plans:
 - Edit saved instrument data
 - Revamp instrument sorting (instead of a different list for every section)
 - .csv file importing
 - More robust and extensive error handling
-- Exporting .csv files to specific filepaths
-- More advanced search capabilities (i.e. search criteria separated by commas,
-  and displaying
-  names that contain the search input as a substring)
-- Basic password or ID verification for employees
 - Automatically sort instruments by instrument ID
 - Record of past transaction notes kept (old notes are kept for filing purposes)
 - Analytical tools to improve scheduling and resource allocation (potentially
   via graphs)
-  - Number of transactions for each instrument/type of instrument
-  - Instruments ordered in most recently checked out/in
   - Most common time of day for instrument check ins/outs
   - Most common day of the week to check out/in instruments
   - Fluctuation of transaction by week
 - Support for more card reader types
 - Potentially enabling it to access the school’s database of ID numbers so that
-  you don’t ever
-  need to type in student information
-- Display a list of students and see what they have checkout out to their name
+  you don’t ever need to type in student information
 - Record time of checkout
 - Prevention of accidental duplications in student database (i.e. multiple ID#’s
-  being assigned
-    the same name)
-- Add autofill N/A for bow
-- On Check In/Out Log Employee Column edit, open up employee window to ensure
-  that correct
-  employee is chosen
+  being assigned the same name)
 - Programmatic colors on filters to know what's pushed and what isn't
-- Choose which backup to open
 
 
-Resources Used:
+# Resources Used:
 - Music folder icon:
   - Artist: shaunkleyn
   - License: Free for non-commercial use.
